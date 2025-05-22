@@ -2,175 +2,131 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fixceo - Técnico en Celulares</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fixceo - Técnico en Celulares | La Plata</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
+      margin: 0; padding: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
+      background: #f0f2f5;
+      color: #222;
     }
-
     header {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
-      padding: 5rem 2rem;
+      background: linear-gradient(135deg, #0d324d, #7f5a83);
+      color: #fff;
+      padding: 60px 20px;
       text-align: center;
     }
-
     header h1 {
       font-size: 3rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.3em;
     }
-
     header p {
       font-size: 1.2rem;
+      margin-bottom: 1.2em;
       max-width: 600px;
-      margin: auto;
-      opacity: 0.9;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.85;
     }
-
-    .btn {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 1rem 2rem;
-      font-size: 1rem;
+    .btn-whatsapp {
       background-color: #25d366;
+      padding: 15px 30px;
       color: white;
+      font-weight: 700;
+      border-radius: 50px;
       text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s ease;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+      display: inline-block;
     }
-
-    .btn:hover {
+    .btn-whatsapp:hover {
       background-color: #1ebe57;
     }
-
-    section {
-      padding: 4rem 2rem;
-      max-width: 1000px;
-      margin: auto;
+    main {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-
-    .services {
+    section.servicios {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 24px;
+      margin-bottom: 40px;
     }
-
-    .service-card {
+    .card-servicio {
       background: white;
-      padding: 2rem;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-      transition: transform 0.2s ease;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 14px rgb(0 0 0 / 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
     }
-
-    .service-card:hover {
-      transform: translateY(-6px);
+    .card-servicio:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgb(0 0 0 / 0.15);
     }
-
-    .service-card h3 {
-      margin-bottom: 1rem;
-      color: #0f2027;
+    .card-servicio h3 {
+      color: #7f5a83;
+      margin-bottom: 10px;
     }
-
-    .section-dark {
-      background-color: #0f2027;
-      color: white;
+    .card-servicio p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: #444;
     }
-
-    .section-dark h2 {
-      color: #25d366;
-    }
-
-    .contact {
-      text-align: center;
-      font-size: 1.1rem;
-    }
-
-    .whatsapp-button {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      background: #25d366;
-      border-radius: 50%;
-      padding: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      font-size: 24px;
-      color: white;
-      text-decoration: none;
-      z-index: 1000;
-    }
-
     footer {
-      background-color: #203a43;
-      color: #bbb;
       text-align: center;
-      padding: 1rem;
+      padding: 20px;
+      background: #7f5a83;
+      color: white;
       font-size: 0.9rem;
     }
-
     @media (max-width: 600px) {
       header h1 {
         font-size: 2rem;
       }
-
-      .btn {
-        font-size: 0.9rem;
-        padding: 0.8rem 1.5rem;
+      header p {
+        font-size: 1rem;
+      }
+      .btn-whatsapp {
+        font-size: 1rem;
+        padding: 12px 24px;
       }
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Fixceo - Técnico en Celulares</h1>
+    <p>Reparación, compra y venta de celulares en La Plata. Servicio rápido, confiable y con garantía.</p>
+    <a href="https://wa.me/5492215665926" class="btn-whatsapp" target="_blank">📲 Contactar por WhatsApp</a>
+  </header>
 
-<header>
-  <h1>Fixceo - Técnico en Celulares</h1>
-  <p>Reparación, compra y venta en La Plata. Atención personalizada, repuestos de calidad y garantía.</p>
-  <a href="https://wa.me/5492215665926" class="btn" target="_blank">📲 Contactar por WhatsApp</a>
-</header>
+  <main>
+    <section class="servicios" aria-label="Servicios ofrecidos">
+      <div class="card-servicio">
+        <h3>🔧 Reparación de Pantallas</h3>
+        <p>Reemplazo de pantallas rotas con materiales de alta calidad, garantizando un acabado impecable.</p>
+      </div>
+      <div class="card-servicio">
+        <h3>🔋 Cambio de Baterías</h3>
+        <p>Servicio rápido para devolverle vida a tu celular con baterías originales o certificadas.</p>
+      </div>
+      <div class="card-servicio">
+        <h3>💻 Desbloqueo y Software</h3>
+        <p>Eliminación de bloqueos, formateos y actualizaciones para que tu celular funcione como nuevo.</p>
+      </div>
+      <div class="card-servicio">
+        <h3>📱 Compra y Venta</h3>
+        <p>Compra de celulares usados y venta de equipos verificados con garantía y factura.</p>
+      </div>
+    </section>
+  </main>
 
-<section>
-  <h2 style="text-align: center;">Nuestros Servicios</h2>
-  <div class="services">
-    <div class="service-card">
-      <h3>🔧 Reparación de Pantallas</h3>
-      <p>Cambios de display, táctil y vidrios rotos con materiales originales o alternativos de alta calidad.</p>
-    </div>
-    <div class="service-card">
-      <h3>🔋 Cambios de Batería</h3>
-      <p>Reemplazo rápido y garantizado. Recuperá la autonomía de tu equipo en menos de 1 hora.</p>
-    </div>
-    <div class="service-card">
-      <h3>💾 Desbloqueos y Software</h3>
-      <p>Reseteos, eliminación de cuentas, desbloqueo de operadoras y actualizaciones.</p>
-    </div>
-    <div class="service-card">
-      <h3>📱 Compra y Venta</h3>
-      <p>Compramos celulares usados y vendemos equipos verificados con garantía y factura.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section-dark">
-  <h2 style="text-align: center;">Zona de trabajo</h2>
-  <p class="contact">📍 La Plata y alrededores - Atención a domicilio o por punto de entrega. Contacto: <strong>2215665926</strong></p>
-</section>
-
-<a href="https://wa.me/5492215665926" target="_blank" class="whatsapp-button" title="Enviar mensaje por WhatsApp">💬</a>
-
-<footer>
-  &copy; 2025 Fixceo - Técnico en Celulares | Todos los derechos reservados
-</footer>
-
+  <footer>
+    &copy; 2025 Fixceo - Técnico en Celulares | La Plata. Todos los derechos reservados.
+  </footer>
 </body>
 </html>
