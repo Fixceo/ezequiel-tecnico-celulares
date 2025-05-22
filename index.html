@@ -2,86 +2,99 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ezequiel Técnico en Celulares</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fixceo - Técnico en Celulares</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      font-family: 'Inter', sans-serif;
-      background: #f2f5f9;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
       color: #333;
-      line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(to right, #0d47a1, #1976d2);
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: white;
-      padding: 3rem 1rem 2rem;
+      padding: 5rem 2rem;
       text-align: center;
     }
 
     header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 3rem;
+      margin-bottom: 1rem;
     }
 
     header p {
       font-size: 1.2rem;
-      font-weight: 500;
+      max-width: 600px;
+      margin: auto;
+      opacity: 0.9;
     }
 
-    main {
+    .btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      background-color: #25d366;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #1ebe57;
+    }
+
+    section {
+      padding: 4rem 2rem;
       max-width: 1000px;
       margin: auto;
-      padding: 2rem 1rem;
-    }
-
-    .intro {
-      text-align: center;
-      margin-bottom: 2rem;
     }
 
     .services {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
     }
 
-    .service {
+    .service-card {
       background: white;
-      padding: 1.5rem;
+      padding: 2rem;
       border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
     }
 
-    .service:hover {
+    .service-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
     }
 
-    .service h3 {
-      color: #0d47a1;
-      margin-bottom: 0.5rem;
+    .service-card h3 {
+      margin-bottom: 1rem;
+      color: #0f2027;
     }
 
-    .service p {
-      color: #555;
-      font-size: 0.95rem;
+    .section-dark {
+      background-color: #0f2027;
+      color: white;
+    }
+
+    .section-dark h2 {
+      color: #25d366;
     }
 
     .contact {
       text-align: center;
-      margin-top: 3rem;
       font-size: 1.1rem;
-      color: #444;
     }
 
     .whatsapp-button {
@@ -90,67 +103,73 @@
       bottom: 20px;
       background: #25d366;
       border-radius: 50%;
-      padding: 18px;
+      padding: 16px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      font-size: 28px;
+      font-size: 24px;
       color: white;
       text-decoration: none;
-      z-index: 9999;
-    }
-
-    .whatsapp-button:hover {
-      background: #1ebe57;
+      z-index: 1000;
     }
 
     footer {
-      background: #0d47a1;
-      color: #ccc;
+      background-color: #203a43;
+      color: #bbb;
       text-align: center;
-      padding: 1rem 0;
-      margin-top: 4rem;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .btn {
+        font-size: 0.9rem;
+        padding: 0.8rem 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Ezequiel Técnico en Celulares</h1>
-  <p>Reparación, compra y venta - La Plata</p>
+  <h1>Fixceo - Técnico en Celulares</h1>
+  <p>Reparación, compra y venta en La Plata. Atención personalizada, repuestos de calidad y garantía.</p>
+  <a href="https://wa.me/5492215665926" class="btn" target="_blank">📲 Contactar por WhatsApp</a>
 </header>
 
-<main>
-  <div class="intro">
-    <p>Soluciones confiables, rápidas y con garantía. Atendemos toda La Plata y alrededores.</p>
+<section>
+  <h2 style="text-align: center;">Nuestros Servicios</h2>
+  <div class="services">
+    <div class="service-card">
+      <h3>🔧 Reparación de Pantallas</h3>
+      <p>Cambios de display, táctil y vidrios rotos con materiales originales o alternativos de alta calidad.</p>
+    </div>
+    <div class="service-card">
+      <h3>🔋 Cambios de Batería</h3>
+      <p>Reemplazo rápido y garantizado. Recuperá la autonomía de tu equipo en menos de 1 hora.</p>
+    </div>
+    <div class="service-card">
+      <h3>💾 Desbloqueos y Software</h3>
+      <p>Reseteos, eliminación de cuentas, desbloqueo de operadoras y actualizaciones.</p>
+    </div>
+    <div class="service-card">
+      <h3>📱 Compra y Venta</h3>
+      <p>Compramos celulares usados y vendemos equipos verificados con garantía y factura.</p>
+    </div>
   </div>
+</section>
 
-  <section class="services">
-    <div class="service">
-      <h3>🔧 Reparación de pantallas</h3>
-      <p>Arreglamos todo tipo de roturas con repuestos de calidad y garantía.</p>
-    </div>
-    <div class="service">
-      <h3>🔋 Cambio de baterías</h3>
-      <p>Recuperá la duración de tu celular con baterías nuevas y seguras.</p>
-    </div>
-    <div class="service">
-      <h3>💾 Software y desbloqueos</h3>
-      <p>Actualizaciones, recuperación de sistemas y liberación para todas las compañías.</p>
-    </div>
-    <div class="service">
-      <h3>📱 Venta y compra de usados</h3>
-      <p>Celulares en buen estado, testeados y con garantía. También compramos los tuyos.</p>
-    </div>
-  </section>
+<section class="section-dark">
+  <h2 style="text-align: center;">Zona de trabajo</h2>
+  <p class="contact">📍 La Plata y alrededores - Atención a domicilio o por punto de entrega. Contacto: <strong>2215665926</strong></p>
+</section>
 
-  <div class="contact">
-    <p>📍 Zona: La Plata - 📞 WhatsApp: <strong>2215665926</strong></p>
-  </div>
-</main>
-
-<a href="https://wa.me/5492215665926" target="_blank" class="whatsapp-button" aria-label="WhatsApp">💬</a>
+<a href="https://wa.me/5492215665926" target="_blank" class="whatsapp-button" title="Enviar mensaje por WhatsApp">💬</a>
 
 <footer>
-  &copy; 2025 Ezequiel Técnico en Celulares - Todos los derechos reservados
+  &copy; 2025 Fixceo - Técnico en Celulares | Todos los derechos reservados
 </footer>
 
 </body>
